@@ -9,28 +9,28 @@ test.describe('SauceDemo Login', () => {
   test('Successful login', async ({ page }) => {
     const loginPage = new LoginPage(page);
 
-    await loginPage.navigateToLoginPage();
+    await loginPage.NavigateToLoginPage();
 
-    await loginPage.login(
+    await loginPage.Login(
       validUser.username,
       validUser.password
     );
 
-    await loginPage.assertLoginSuccessful();
+    await loginPage.AssertLoginSuccessful();
   });
 
   for (const testData of negativeLoginCases || []) {
     test(`Negative Login - ${testData.scenario}`, async ({ page }) => {
       const loginPage = new LoginPage(page);
 
-      await loginPage.navigateToLoginPage();
+      await loginPage.NavigateToLoginPage();
 
-      await loginPage.login(
+      await loginPage.Login(
         testData.username,
         testData.password
       );
 
-      await loginPage.assertError(testData.error);
+      await loginPage.AssertError(testData.error);
     });
   }
 });

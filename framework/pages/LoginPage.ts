@@ -7,17 +7,17 @@ export class LoginPage extends PageBase {
     this.page = page;
   }
 
-  public async navigateToLoginPage() {
+  async NavigateToLoginPage() {
     await this.navigate('https://www.saucedemo.com/');
   }
 
-  async login(username: string, password: string) {
+  async Login(username: string, password: string) {
     await this.getLocatorByDataTest('username').fill(username);
     await this.getLocatorByDataTest('password').fill(password);
     await this.getLocatorByDataTest('login-button').click();
   }
 
-  async assertLoginSuccessful() {
+  async AssertLoginSuccessful() {
     await expect(this.page).toHaveURL(/inventory\.html/);
     await expect(this.page.locator('.title'))
       .toHaveText('Products');

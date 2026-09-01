@@ -7,6 +7,10 @@ export class PageBase {
     this.page = page;
   }
 
+  public getLocator(value: string) {
+  return this.page.locator(`${value}`);
+  }
+
   public getLocatorByDataTest(value: string) {
   return this.page.locator(`[data-test="${value}"]`);
   }
@@ -15,7 +19,7 @@ export class PageBase {
     await this.page.goto(`${url}`);
   }
 
-  public async assertError(expectedMessage: string) {
+  public async AssertError(expectedMessage: string) {
     await expect(this.getLocatorByDataTest('error'))
       .toContainText(expectedMessage);
   }
