@@ -9,7 +9,7 @@ export class ProductsPage extends PageBase {
 
   // Add first product to cart
   async AddProductToCart() {
-    await this.getLocatorByDataTest('add-to-cart-sauce-labs-backpack').click();
+    await this.getLocatorByFirstDataTest('add-to-cart-').first().click();
   }
   
   // Verify cart badge

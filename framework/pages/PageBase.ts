@@ -15,6 +15,10 @@ export class PageBase {
   return this.page.locator(`[data-test="${value}"]`);
   }
 
+  public getLocatorByFirstDataTest(value: string) {
+  return this.page.locator(`[data-test^="${value}"]`);
+  }
+
   public async navigate(url: string) {
     await this.page.goto(`${url}`);
   }
