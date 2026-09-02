@@ -163,12 +163,12 @@ Login with valid credentials.
 12. Verify success message. "Thank you for your order!" is displayed.
 
 ### Expected Result
-Product is successfully added to the cart.
-Cart contains exactly one item.
-User can proceed through checkout.
-Checkout Overview page displays selected product.
-Order is completed successfully.
-Confirmation message "Thank you for your order!" is displayed.
+- Product is successfully added to the cart.
+- Cart contains exactly one item.
+- User can proceed through checkout.
+- Checkout Overview page displays selected product.
+- Order is completed successfully.
+- Confirmation message "Thank you for your order!" is displayed.
 
 # 📊 How to Check Test Results
 
