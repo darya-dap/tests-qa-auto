@@ -16,7 +16,7 @@ export const negativeLoginCases = [
     username: 'wrong_user',
     password: 'secret_sauce',
     error:
-      'Username and password do not match any user in this service'
+      'Epic sadface: Username and password do not match any user in this service'
   },
   {
     scenario: 'Empty password',
