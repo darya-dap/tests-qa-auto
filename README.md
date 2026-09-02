@@ -26,7 +26,9 @@ Application https://www.saucedemo.com/ is available.
 User account exists.
 
 ### Test Data
-Username: standard_user; Password: secret_sauce
+| Username | Password |
+|-----------|-----------|
+| standard_user | secret_sauce |
 
 ### Steps
 1. Navigate to SauceDemo login page https://www.saucedemo.com/.
@@ -35,9 +37,9 @@ Username: standard_user; Password: secret_sauce
 4. Click Login button.
 
 ### Expected Result
-User is successfully authenticated.
-User is redirected to the inventory page https://www.saucedemo.com/inventory.html.
-Products title is displayed.
+- User is successfully authenticated.
+- User is redirected to the inventory page https://www.saucedemo.com/inventory.html.
+- Products title is displayed.
 
 ## TC-002: Login with Invalid Username
 
@@ -48,7 +50,9 @@ Verify that login fails when an invalid username is entered.
 User is on login page https://www.saucedemo.com/.
 
 ### Test Data
-Username: wrong_user; Password: secret_sauce
+| Username | Password |
+|-----------|-----------|
+| wrong_user | secret_sauce |
 
 ### Steps
 1. Navigate to login page https://www.saucedemo.com/.
@@ -57,10 +61,9 @@ Username: wrong_user; Password: secret_sauce
 4. Click Login.
 
 ### Expected Result
-Login is rejected.
-Error message is displayed:
-"Epic sadface: Username and password do not match any user in this service"
-User remains on login page.
+- Login is rejected.
+- Error message is displayed: "Epic sadface: Username and password do not match any user in this service".
+- User remains on login page.
 
 ## TC-003: Login with Invalid Password
 
@@ -71,7 +74,9 @@ Verify that login fails when an invalid password is entered.
 User is on login page https://www.saucedemo.com/.
 
 ### Test Data
-Username: standard_user; Password: wrong_password
+| Username | Password |
+|-----------|-----------|
+| standard_user | wrong_password |
 
 ### Steps
 1. Navigate to login page https://www.saucedemo.com/.
@@ -80,10 +85,9 @@ Username: standard_user; Password: wrong_password
 4. Click Login.
 
 ### Expected Result
-Login is rejected.
-Error message is displayed:
-"Epic sadface: Username and password do not match any user in this service"
-User remains on login page.
+- Login is rejected.
+- Error message is displayed: "Epic sadface: Username and password do not match any user in this service".
+- User remains on login page.
 
 ## TC-004: Login with Empty Username
 
@@ -94,7 +98,9 @@ Verify validation when username field is empty.
 User is on login page https://www.saucedemo.com/.
 
 ### Test Data
-Username: "" Password: secret_sauce
+| Username | Password |
+|-----------|-----------|
+| Empty | secret_sauce |
 
 ### Steps
 1. Navigate to login page https://www.saucedemo.com/.
@@ -103,10 +109,9 @@ Username: "" Password: secret_sauce
 4. Click Login.
 
 ### Expected Result
-Login is rejected.
-Error message is displayed:
-"Epic sadface: Username is required"
-User remains on login page.
+- Login is rejected.
+- Error message is displayed: "Epic sadface: Username is required".
+- User remains on login page.
 
 ## TC-005: Login with Empty Password
 
@@ -117,7 +122,9 @@ Verify validation when password field is empty.
 User is on login page https://www.saucedemo.com/.
 
 ### Test Data
-Username: standard_user; Password: ""
+| Username | Password |
+|-----------|-----------|
+| standard_user | Empty |
 
 ### Steps
 1. Navigate to login page https://www.saucedemo.com/.
@@ -126,10 +133,9 @@ Username: standard_user; Password: ""
 4. Click Login.
 
 ### Expected Result
-Login is rejected.
-Error message is displayed:
-"Epic sadface: Password is required"
-User remains on login page.
+- Login is rejected.
+- Error message is displayed: "Epic sadface: Password is required".
+- User remains on login page.
 
 # Test Suite: SauceDemo Checkout
 
