@@ -1,10 +1,10 @@
 # tests-qa-auto
 
-## The following Test Suites are covered:
+# The following Test Suites are covered:
 
-## Test Suite: SauceDemo Login
+# Test Suite: SauceDemo Login
 
-# TC-001: Successful Login with Valid Credentials
+## TC-001: Successful Login with Valid Credentials
 
 - Objective: Verify that a user can login with valid credentials.
 
@@ -26,7 +26,7 @@ User is successfully authenticated.
 User is redirected to the inventory page https://www.saucedemo.com/inventory.html.
 Products title is displayed.
 
-# TC-002: Login with Invalid Username
+## TC-002: Login with Invalid Username
 
 - Objective: Verify that login fails when an invalid username is entered.
 
@@ -48,7 +48,7 @@ Error message is displayed:
 "Epic sadface: Username and password do not match any user in this service"
 User remains on login page.
 
-# TC-003: Login with Invalid Password
+## TC-003: Login with Invalid Password
 
 - Objective: Verify that login fails when an invalid password is entered.
 
@@ -70,7 +70,7 @@ Error message is displayed:
 "Epic sadface: Username and password do not match any user in this service"
 User remains on login page.
 
-# TC-004: Login with Empty Username
+## TC-004: Login with Empty Username
 
 - Objective: Verify validation when username field is empty.
 
@@ -92,7 +92,7 @@ Error message is displayed:
 "Epic sadface: Username is required"
 User remains on login page.
 
-# TC-005: Login with Empty Password
+## TC-005: Login with Empty Password
 
 - Objective: Verify validation when password field is empty.
 
@@ -114,9 +114,9 @@ Error message is displayed:
 "Epic sadface: Password is required"
 User remains on login page.
 
-## Test Suite: SauceDemo Checkout
+# Test Suite: SauceDemo Checkout
 
-# TC-001: Successfully Add Product to Cart and Complete Checkout
+## TC-001: Successfully Add Product to Cart and Complete Checkout
 
 - Objective: Verify that a logged-in user can add a product to the cart, proceed through checkout, and successfully complete an order.
 
@@ -146,7 +146,7 @@ Checkout Overview page displays selected product.
 Order is completed successfully.
 Confirmation message "Thank you for your order!" is displayed.
 
-## To check Run Tests result
+# To check Run Tests result
 
 - Go to GitHub → Actions.
 - Select Playwright Tests workflow.
